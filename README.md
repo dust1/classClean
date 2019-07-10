@@ -10,23 +10,23 @@
 ## 例子
 
 一个普通的项目目录结构如下：
-src
-  -main
-    -java
-      -com
-        -text
-          -controller
-          -service
-          -model
-          ...
-target
-  -classses
-    -com
-      -text
-        -controller
-        -service
-        -model
-        ...
+src<br>
+  -main<br>
+    -java<br>
+      -com<br>
+        -text<br>
+          -controller<br>
+          -service<br>
+          -model <br>
+          ... <br>
+target<br>
+  -classses<br>
+    -com<br>
+      -text<br>
+        -controller<br>
+        -service<br>
+        -model<br>
+        ...<br>
 
 如果我们需要进行分析，则输入命令为 /{classPath}/target/classes/com /{classPath}/target/classes/com/controller<br>
 这样，他就会根据controller文件下的所有Controller.class进行分析并以此为bootstrap Class创建调用链。并分析com文件夹下的所有文件有那些没有被调用到。
