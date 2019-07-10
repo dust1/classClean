@@ -12,12 +12,8 @@ public class Main {
      *                  /usr/local/jar/myJavaProject/target/classes/myJavaProject/src/main/java/com/dust/controller
      */
     public static void main(String[] args) {
-        String[] str = {
-                "/Users/kous/Documents/acfunFind/target/classes/com",
-                "/Users/kous/Documents/acfunFind/target/classes/com/dust/acfunFind/controller"
-        };
         CleanTask cleanTask = new CleanTask();
-        int i = cleanTask.run(str);
+        int i = cleanTask.run(args);
         System.exit(i);
     }
 }
